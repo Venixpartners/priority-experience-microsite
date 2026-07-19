@@ -9,23 +9,27 @@ export const metadata = {
 const proofPoints = [
   {
     title: "What customers say",
-    placeholder: "[Insert verified customer review theme]",
-    note: "Verified review themes from app store and platform feedback will appear here.",
+    placeholder:
+      "An independent analysis of 90,000+ Uber Eats app reviews found customers consistently praise convenience and ease of use, while the most requested improvement is faster, more effective support. This experience is built to close that gap.",
+    note: "Source: LearnData review analysis of 90,000+ Google Play reviews, 2025.",
   },
   {
     title: "Support policy",
-    placeholder: "[Insert verified support policy source]",
-    note: "A link to the published support and refund policy will appear here.",
+    placeholder:
+      "Refunds for wrong or missing items follow a published policy: report within 48 hours, and fully incorrect orders are refunded in full including tax and the delivery fee.",
+    note: "Source: Uber Help Centre, help.uber.com, Wrong or missing items and Managing refunds articles.",
   },
   {
     title: "Delivery reliability",
-    placeholder: "[Insert verified delivery or membership proof point]",
-    note: "A verified delivery performance or membership figure will appear here.",
+    placeholder:
+      "Uber One includes an arrival promise: members receive $5 in Uber Cash on eligible deliveries if the Latest Arrival estimate is missed. Uber states members save around $25 per month on average.",
+    note: "Sources: Uber One launch announcement (Uber Technologies) and Uber One membership terms.",
   },
   {
     title: "App store evidence",
-    placeholder: "[Insert verified app store rating or review evidence]",
-    note: "Verified rating or review evidence will appear here.",
+    placeholder:
+      "Uber Eats holds a rating of about 4.6 out of 5 across more than 7.5 million app store reviews, with convenience and ease of use the most cited strengths.",
+    note: "Source: App Store and Google Play listings for Uber Eats. Confirm the live rating on the store page before relying on this figure.",
   },
 ];
 
@@ -140,10 +144,13 @@ export default function TrustPage() {
                 <p className="body-text mt-2 text-sm">{item.text}</p>
               </div>
             ))}
-            <div className="placeholder-note">
-              [Insert verified support policy source] Link the published policy
-              pages here before publishing.
-            </div>
+            <p className="text-xs text-slate2">
+              Refund and support standards reference Uber&apos;s published Help
+              Centre policies at help.uber.com, including the 48 hour reporting
+              window for wrong or missing items and full refunds for fully
+              incorrect orders. Membership pricing and cancellation terms
+              reference Uber One&apos;s published terms.
+            </p>
           </div>
         </div>
       </section>
