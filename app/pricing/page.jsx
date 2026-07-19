@@ -11,7 +11,7 @@ const plans = [
   {
     name: "Standard",
     price: "Pay per order",
-    priceNote: "[Insert verified fee structure]",
+    priceNote: "Delivery fee typically $3 to $5 per order, plus service fee and taxes",
     description:
       "Normal pay-per-order delivery. Order when you want, pay standard fees each time.",
     features: [
@@ -24,8 +24,8 @@ const plans = [
   },
   {
     name: "Priority",
-    price: "[Insert verified price or range]",
-    priceNote: "per order add-on",
+    price: "$1.99",
+    priceNote: "per order add-on (proposed, pending validation)",
     description:
       "Enhanced fee visibility, delivery confidence updates, and faster support routing on the orders that matter.",
     features: [
@@ -39,8 +39,8 @@ const plans = [
   },
   {
     name: "Uber One Priority",
-    price: "[Insert verified price or range]",
-    priceNote: "per month",
+    price: "$9.99",
+    priceNote: "per month, or $96 per year",
     description:
       "A membership built for frequent users. Priority benefits on every order, plus reduced delivery fees.",
     features: [
@@ -78,8 +78,10 @@ export default function PricingPage() {
             structure is simple by design.
           </p>
           <div className="placeholder-note mt-6">
-            Prototype pricing. All prices shown are placeholders and must be
-            validated before launch.
+            Prototype pricing. Membership pricing is anchored to Uber One&apos;s
+            published US price of $9.99 per month or $96 per year (source:
+            help.uber.com). The Priority add-on price is a proposed figure and
+            requires validation before launch.
           </div>
         </div>
       </section>
@@ -167,9 +169,11 @@ export default function PricingPage() {
             </table>
           </div>
           <p className="mt-4 text-xs text-slate2">
-            Plan details are prototype concepts. Benefit eligibility, fee
-            levels, and membership terms require validation before any
-            commercial launch.
+            Plan details are prototype concepts. Standard fee ranges reflect
+            typical published delivery fees of $3 to $5 per order. Membership
+            pricing is anchored to Uber One&apos;s published rate on
+            help.uber.com. Benefit eligibility and terms require validation
+            before any commercial launch.
           </p>
         </div>
       </section>
